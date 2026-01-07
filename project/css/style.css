@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  background: #caae95;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+.navbar-brand.logo {
+  text-align: center;
+  font-size: 6vw;
+  color: #5e5653;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand.logo {
+    font-size: 3rem;
+  }
+}
+
+.nav-link {
+  font-size: 1.6rem;
+}
+/* ===== Header ===== */
+header {
+  position: static; 
+}
+
+.logo {
+  opacity: 0;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.menu span::before {
+  top: -8px;
+}
+
+.menu span::after {
+  top: 8px;
+}
+
+/* ===== Layout ===== */
+.o-wrapper {
+  padding: 0 2rem;
+}
+
+@media (min-width: 768px) {
+  .o-wrapper {
+    padding: 0 10%;
+  }
+}
+
+/* ===== Gallery ===== */
+.gallery {
+  list-style: none;
+  padding-top: 150vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.image {
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+}
+
+.image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  font-size: 6vw;
+  margin: 15rem 0 20rem;
+  letter-spacing: 0.1em;
+}
